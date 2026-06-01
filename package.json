@@ -1,0 +1,41 @@
+{
+  "name": "blockchain-introduction-with-supplychain-projects",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "node": "hardhat node",
+    "deploy:local": "hardhat run scripts/deploy.ts --network localhost",
+    "deploy:sepolia": "hardhat run scripts/deploy.ts --network sepolia",
+    "seed:local": "hardhat run scripts/seed-local.ts --network localhost"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArDapps/Blockchain-Introduction-with-Supplychain-Projects.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArDapps/Blockchain-Introduction-with-Supplychain-Projects/issues"
+  },
+  "homepage": "https://github.com/ArDapps/Blockchain-Introduction-with-Supplychain-Projects#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^4.0.12",
+    "@nomicfoundation/hardhat-ethers-chai-matchers": "^3.0.9",
+    "@nomicfoundation/hardhat-mocha": "^3.0.20",
+    "@nomicfoundation/hardhat-network-helpers": "^3.0.9",
+    "@nomicfoundation/hardhat-toolbox-mocha-ethers": "^3.0.6",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^25.9.1",
+    "chai": "^6.2.2",
+    "dotenv": "^17.4.2",
+    "ethers": "^6.16.0",
+    "hardhat": "^3.7.0",
+    "mocha": "^11.7.6",
+    "typescript": "^6.0.3"
+  }
+}

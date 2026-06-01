@@ -1,0 +1,15 @@
+export const supplyChainAbi = [
+  "function supplier() view returns (address)",
+  "function receiver() view returns (address)",
+  "function productCount() view returns (uint256)",
+  "function createProduct(string name,string description,string origin,string location,string note) returns (uint256)",
+  "function markAsShipped(uint256 productId,string location,string note)",
+  "function markAsReceived(uint256 productId,string location,string note)",
+  "function completeProduct(uint256 productId,string location,string note)",
+  "function getProduct(uint256 productId) view returns (tuple(uint256 id,string name,string description,string origin,address createdBy,uint8 status,uint256 createdAt,bool exists))",
+  "function getProductHistory(uint256 productId) view returns (tuple(uint8 status,address actor,string location,string note,uint256 timestamp)[])",
+  "function getProducts(uint256 offset,uint256 limit) view returns (tuple(uint256 id,string name,string description,string origin,address createdBy,uint8 status,uint256 createdAt,bool exists)[])",
+  "function getPartnerRole(address account) view returns (uint8)",
+  "event ProductCreated(uint256 indexed productId,string name,address indexed supplier,string origin,string location,string note,uint256 timestamp)",
+  "event ProductStatusUpdated(uint256 indexed productId,uint8 previousStatus,uint8 newStatus,address indexed actor,string location,string note,uint256 timestamp)",
+] as const;
