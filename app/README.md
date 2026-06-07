@@ -2,6 +2,14 @@
 
 Next.js App Router frontend for the Sepolia `TwoPartnerSupplyChain` contract.
 
+## App Flow
+
+![ChainLedger app flow infographic](public/brand/chainledger-app-flow.png)
+
+## تدفق التطبيق بالعربية
+
+![إنفوجرافيك عربي لتدفق تطبيق ChainLedger](public/brand/chainledger-app-flow-ar.png)
+
 ## Setup
 
 Install dependencies:

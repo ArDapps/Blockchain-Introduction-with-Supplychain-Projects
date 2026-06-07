@@ -78,15 +78,16 @@ function CreateProductControls() {
   return (
     <form onSubmit={onSubmit} className="grid gap-4 rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
       {[
-        ["name", "Product name", 100],
-        ["origin", "Origin", 120],
-        ["location", "Initial location", 120],
-      ].map(([field, label, max]) => (
+        ["name", "Product name", 100, "Organic cotton batch #A-102"],
+        ["origin", "Origin", 120, "Alexandria warehouse"],
+        ["location", "Initial location", 120, "Supplier loading dock"],
+      ].map(([field, label, max, placeholder]) => (
         <label key={field} className="grid gap-1 text-sm font-medium text-slate-700">
           {label}
           <input
             required
             maxLength={Number(max)}
+            placeholder={String(placeholder)}
             value={form[field as keyof typeof form]}
             onChange={(event) => updateField(field as keyof typeof form, event.target.value)}
             className="rounded-lg border border-slate-200 px-3 py-2 outline-none ring-emerald-500 focus:ring-2"
@@ -98,6 +99,7 @@ function CreateProductControls() {
         <textarea
           maxLength={500}
           rows={4}
+          placeholder="Add product details, batch notes, or handling requirements."
           value={form.description}
           onChange={(event) => updateField("description", event.target.value)}
           className="rounded-lg border border-slate-200 px-3 py-2 outline-none ring-emerald-500 focus:ring-2"
@@ -108,6 +110,7 @@ function CreateProductControls() {
         <textarea
           maxLength={500}
           rows={3}
+          placeholder="Initial condition, custody note, or inspection comment."
           value={form.note}
           onChange={(event) => updateField("note", event.target.value)}
           className="rounded-lg border border-slate-200 px-3 py-2 outline-none ring-emerald-500 focus:ring-2"

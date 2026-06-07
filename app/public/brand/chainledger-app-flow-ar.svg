@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">تدفق تطبيق ChainLedger بالعربية</title>
+  <desc id="desc">مخطط عربي بسيط وواضح يشرح خطوات تطبيق ChainLedger على شبكة Sepolia.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="1" stop-color="#ecfdf5"/>
+    </linearGradient>
+    <filter id="shadow" x="-8%" y="-12%" width="116%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0f172a" flood-opacity=".10"/>
+    </filter>
+    <style>
+      .rtl { direction: rtl; unicode-bidi: plaintext; }
+      .title { font: 800 56px Arial, Tahoma, sans-serif; fill: #0f172a; }
+      .lead { font: 600 24px Arial, Tahoma, sans-serif; fill: #334155; }
+      .card-title { font: 800 28px Arial, Tahoma, sans-serif; fill: #0f172a; }
+      .copy { font: 500 22px Arial, Tahoma, sans-serif; fill: #334155; }
+      .tag { font: 700 18px Arial, Tahoma, sans-serif; fill: #047857; }
+      .num { font: 800 25px Arial, sans-serif; fill: #fff; }
+      .green { fill: #059669; }
+      .card { fill: #fff; stroke: #cbd5e1; stroke-width: 2; }
+      .soft { fill: #ecfdf5; stroke: #a7f3d0; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <text x="1500" y="78" text-anchor="end" class="title rtl">تدفق تطبيق <tspan class="green">ChainLedger</tspan></text>
+  <text x="1500" y="118" text-anchor="end" class="lead rtl">مخطط مختصر من إعداد البيئة إلى التحقق من المعاملة على Sepolia</text>
+
+  <g filter="url(#shadow)">
+    <g transform="translate(1180 165)">
+      <rect width="330" height="175" rx="18" class="card"/>
+      <circle cx="48" cy="45" r="26" class="green"/><text x="48" y="54" text-anchor="middle" class="num">1</text>
+      <text x="292" y="54" text-anchor="end" class="card-title rtl">إعداد البيئة</text>
+      <text x="292" y="96" text-anchor="end" class="copy rtl">أضف RPC ومعرف Reown</text>
+      <text x="292" y="130" text-anchor="end" class="copy rtl">وعنوان العقد في .env.local</text>
+      <rect x="38" y="140" width="254" height="26" rx="8" class="soft"/>
+      <text x="274" y="160" text-anchor="end" class="tag rtl">شبكة Sepolia</text>
+    </g>
+
+    <g transform="translate(805 165)">
+      <rect width="330" height="175" rx="18" class="card"/>
+      <circle cx="48" cy="45" r="26" class="green"/><text x="48" y="54" text-anchor="middle" class="num">2</text>
+      <text x="292" y="54" text-anchor="end" class="card-title rtl">ربط المحفظة</text>
+      <text x="292" y="96" text-anchor="end" class="copy rtl">يتصل المستخدم بالمحفظة</text>
+      <text x="292" y="130" text-anchor="end" class="copy rtl">ثم يؤكد الشبكة الصحيحة</text>
+      <rect x="38" y="140" width="254" height="26" rx="8" class="soft"/>
+      <text x="274" y="160" text-anchor="end" class="tag rtl">مورد / مستلم / مشاهد</text>
+    </g>
+
+    <g transform="translate(430 165)">
+      <rect width="330" height="175" rx="18" class="card"/>
+      <circle cx="48" cy="45" r="26" class="green"/><text x="48" y="54" text-anchor="middle" class="num">3</text>
+      <text x="292" y="54" text-anchor="end" class="card-title rtl">لوحة التحكم</text>
+      <text x="292" y="96" text-anchor="end" class="copy rtl">تعرض دور المحفظة</text>
+      <text x="292" y="130" text-anchor="end" class="copy rtl">والأزرار المسموحة فقط</text>
+      <rect x="38" y="140" width="254" height="26" rx="8" class="soft"/>
+      <text x="274" y="160" text-anchor="end" class="tag rtl">إجراءات حسب الدور</text>
+    </g>
+
+    <g transform="translate(55 165)">
+      <rect width="330" height="175" rx="18" class="card"/>
+      <circle cx="48" cy="45" r="26" class="green"/><text x="48" y="54" text-anchor="middle" class="num">4</text>
+      <text x="292" y="54" text-anchor="end" class="card-title rtl">إنشاء منتج</text>
+      <text x="292" y="96" text-anchor="end" class="copy rtl">يسجل المورد المنتج</text>
+      <text x="292" y="130" text-anchor="end" class="copy rtl">مع الاسم والمنشأ والموقع</text>
+      <rect x="38" y="140" width="254" height="26" rx="8" class="soft"/>
+      <text x="274" y="160" text-anchor="end" class="tag rtl">للمورد فقط</text>
+    </g>
+  </g>
+
+  <g filter="url(#shadow)">
+    <g transform="translate(1180 405)">
+      <rect width="330" height="175" rx="18" class="card"/>
+      <circle cx="48" cy="45" r="26" class="green"/><text x="48" y="54" text-anchor="middle" class="num">5</text>
+      <text x="292" y="54" text-anchor="end" class="card-title rtl">تحديث الحالة</text>
+      <text x="292" y="96" text-anchor="end" class="copy rtl">الحالة تتحرك بالترتيب</text>
+      <text x="292" y="130" text-anchor="end" class="copy rtl">شحن ثم استلام ثم إكمال</text>
+      <rect x="38" y="140" width="254" height="26" rx="8" class="soft"/>
+      <text x="274" y="160" text-anchor="end" class="tag rtl">موقع + ملاحظة</text>
+    </g>
+
+    <g transform="translate(805 405)">
+      <rect width="330" height="175" rx="18" class="card"/>
+      <circle cx="48" cy="45" r="26" class="green"/><text x="48" y="54" text-anchor="middle" class="num">6</text>
+      <text x="292" y="54" text-anchor="end" class="card-title rtl">السجل والبحث</text>
+      <text x="292" y="96" text-anchor="end" class="copy rtl">يمكن البحث برقم المنتج</text>
+      <text x="292" y="130" text-anchor="end" class="copy rtl">واستعراض السجل العام</text>
+      <rect x="38" y="140" width="254" height="26" rx="8" class="soft"/>
+      <text x="274" y="160" text-anchor="end" class="tag rtl">Product ID</text>
+    </g>
+
+    <g transform="translate(430 405)">
+      <rect width="330" height="175" rx="18" class="card"/>
+      <circle cx="48" cy="45" r="26" class="green"/><text x="48" y="54" text-anchor="middle" class="num">7</text>
+      <text x="292" y="54" text-anchor="end" class="card-title rtl">تفاصيل المنتج</text>
+      <text x="292" y="96" text-anchor="end" class="copy rtl">يعرض الخط الزمني</text>
+      <text x="292" y="130" text-anchor="end" class="copy rtl">الممثل والموقع والملاحظة</text>
+      <rect x="38" y="140" width="254" height="26" rx="8" class="soft"/>
+      <text x="274" y="160" text-anchor="end" class="tag rtl">تاريخ كامل</text>
+    </g>
+
+    <g transform="translate(55 405)">
+      <rect width="330" height="175" rx="18" class="card"/>
+      <circle cx="48" cy="45" r="26" class="green"/><text x="48" y="54" text-anchor="middle" class="num">8</text>
+      <text x="292" y="54" text-anchor="end" class="card-title rtl">مستكشف Sepolia</text>
+      <text x="292" y="96" text-anchor="end" class="copy rtl">يفتح رابط Etherscan</text>
+      <text x="292" y="130" text-anchor="end" class="copy rtl">للتحقق من المعاملة</text>
+      <rect x="38" y="140" width="254" height="26" rx="8" class="soft"/>
+      <text x="274" y="160" text-anchor="end" class="tag rtl">إثبات على السلسلة</text>
+    </g>
+  </g>
+
+  <g transform="translate(105 642)" filter="url(#shadow)">
+    <rect width="1390" height="82" rx="18" class="card"/>
+    <text x="1340" y="51" text-anchor="end" class="copy rtl">الصلاحيات: المورد ينشئ ويشحن، المستلم يؤكد الاستلام والإكمال، والمشاهد يقرأ ويبحث فقط.</text>
+  </g>
+
+  <g transform="translate(250 765)" filter="url(#shadow)">
+    <rect width="1100" height="70" rx="18" fill="#f8fffb" stroke="#059669" stroke-width="3"/>
+    <text x="1048" y="45" text-anchor="end" class="copy rtl">العقد الذكي يسجل كل إنشاء وتحديث حالة كأحداث غير قابلة للتغيير.</text>
+    <circle cx="45" cy="35" r="22" fill="#d1fae5"/>
+    <text x="45" y="44" text-anchor="middle" font="800 24px Arial" fill="#059669">{}</text>
+  </g>
+</svg>
